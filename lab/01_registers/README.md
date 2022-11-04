@@ -2,17 +2,9 @@
 
 Toggle the Qt Py's Neopixel LED when the BOOT button is pressed, using only direct register reads to access the boot button status. You may use the SDK to initialize the board and the pins, and the WS2812 example code to toggle the Neopixel. 
 
-### Components used for part 1
-
--RP 2040
-
-### Peripheral
-
--GPIO
-
 ### Introduction
 
-According to the datasheet, the BOOT button is GPIO21. Then we can use gpio_get() to directly access the boot button status. When the BOOT button is pressed, then the return value will be 0. Then the code will achieve that the Neopixel LED will be on with set color when BOOT button is pressed.
+We used RP 2040 and GPIO in this part. According to the datasheet, the BOOT button is GPIO21. Then we can use gpio_get() to directly access the boot button status. When the BOOT button is pressed, then the return value will be 0. Then the code will achieve that the Neopixel LED will be on with set color when BOOT button is pressed.
 
 ### Code
 
