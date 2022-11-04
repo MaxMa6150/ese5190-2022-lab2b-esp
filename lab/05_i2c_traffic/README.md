@@ -64,11 +64,11 @@ From the graph we can see that the device is working in periods, now we zoom in 
 
 It is clear that each period have four data set in series and they have repeated pattern. Then we change the brightness (from dark to bright/from bright to dark) to see voltage output changes.
 
-when detecting the increasingly low light source, the last several digits are low voltage outputs.
+When detecting the increasingly low light source, the last several digits are low voltage outputs.
 
 ![3d5c23a98ebdacd54f04e88c1b5af01](https://user-images.githubusercontent.com/113209201/200036690-da966c74-9d4e-41c2-bfdc-072c24bd86bf.jpg)
 
-when detecting the increasingly high light source, the last several digits are high voltage outputs.
+When detecting the increasingly high light source, the last several digits are high voltage outputs.
 
 ![f6465ac69b59d430fef3c56bbb313d9](https://user-images.githubusercontent.com/113209201/200037348-f603d39a-9ff0-465d-aee1-571941d56c95.jpg)
 
