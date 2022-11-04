@@ -71,4 +71,6 @@ int main() {
 
 ### Result/Demo
 
-The result is shown below. The Neopixel LED will turn on when the BOOT button is pressed
+The result is shown below. The Neopixel LED will turn on when the BOOT button is pressed.
+
+(https://github.com/MaxMa6150/ese5190-2022-lab2b-esp/blob/main/lab/01_registers/part_1.gif)
