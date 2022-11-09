@@ -8,7 +8,7 @@ Create a REPL to let you read and write RP2040 registers from a console. You sho
 
 ### Introduction:
 
-In this part, we will basically use RP2040 and GPIO peripheral. The ideal program should be that when the program starts, it will ask the user to select/input a register address then choose to read/write. Once it finished expected reading/writing, it will print a success message from the console.
+In this part, we will basically use RP2040. The ideal program should be that when the program starts, it will ask the user to select/input a register address then choose to read/write. Once it finished expected reading/writing, it will print a success message from the console.
 
 
 ### Code:
