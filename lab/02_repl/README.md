@@ -13,6 +13,7 @@ In this part, we will basically use RP2040 and GPIO peripheral. The ideal progra
 
 ### Code:
 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include "pico/stdlib.h"
@@ -87,6 +88,7 @@ int main() {
     return 0;
 
 }
+```
 
 ### Result
 Firstly we choose the address 0xd0000060, which can be read and edit with 0-31 bits. We first read the original value at the address and then modified it as 0x7fffff. The console shows that the value has been successfully edited.
