@@ -91,13 +91,14 @@ int main() {
 ```
 
 ### Result
-Firstly we choose the address 0xd0000060, which can be read and edit with 0-31 bits. We first read the original value at the address and then modified it as 0x7fffff. The console shows that the value has been successfully edited.
+Firstly we choose the address 0xd0000060, which can be read and edit with 0-31 bits. We first read the original value at the address (0x7fffff) and then modified it as 0x8fffff. The console shows that the value has been successfully edited.
 
 <img width="812" alt="c0aa2e0613abe06ee8e52c8e7b7e364" src="https://user-images.githubusercontent.com/114200453/200707462-23939d56-df64-4e53-aca9-e10345946937.png">
 
 Then we access the address 0xd0000004, the boot button. When we release the button, the read value is 0x200800 and the return value changed to 0x800 when we pressed the button.
 
-![27a7f6e7cc56b846b2b679c17cf569f](https://user-images.githubusercontent.com/114200453/200707890-9bd18aeb-deaf-48e1-bdf0-44f847af26b5.png)
+![cd50704cb7af7efced7b3f73cd7a0e0](https://user-images.githubusercontent.com/114200453/200717032-e4f219ca-ec10-4f5c-82f4-684a87ea1b0d.png)
+
 
 
 
