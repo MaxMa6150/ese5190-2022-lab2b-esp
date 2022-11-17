@@ -108,14 +108,14 @@ int main() {
 }
 ```
 
-Then we try to use Python Serial to interact with C. **The .c and .py files are in the attachment.
+Then we try to use Python Serial to interact with C. **The .c and .py files are in the attachment.**
 
 The user can choose the modes:
-**R: record a blinking pattern
+**R: record a blinking pattern**
 
 we can record the pattern in a .txt file on PC and replay that pattern anytime.
 
-**P: replay a recorded sequence on your NeoPixel
+**P: replay a recorded sequence on your NeoPixel**
 
 In the replay mode, we can:
 1）choose normal speed/speed up/speed down pattern
