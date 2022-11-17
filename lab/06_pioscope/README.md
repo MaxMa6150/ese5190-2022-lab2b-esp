@@ -6,6 +6,8 @@
 
 ### Code:
 
+By setting PIN_BASE and PIN _COUNT, we can access PIN 22 and 23, which are SDA and SCL.
+
 ```
 #include <stdio.h>
 #include <stdlib.h>
