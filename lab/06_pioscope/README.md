@@ -166,4 +166,8 @@ int main() {
 
 ![b21dc9193e8f10f25ef333a3d03aadd](https://user-images.githubusercontent.com/114200453/202056595-fb085295-5523-40d7-b280-adcedfc6e4c8.jpg)
 
+When BOOT button is pressed, py2040 with C code will record RP2040-ADPS9960 exchange.
+
+When the sensor detect the brightness change, the exchange pattern will change.
+
 
