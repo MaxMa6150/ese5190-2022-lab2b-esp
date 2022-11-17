@@ -115,6 +115,7 @@ The basic logic is:
 - ```qtpy.write(b'...')``` to choose record or replay mode: b'r' for record and b'p' for replay 
 
 So we can choose the modes:
+
 **R: record a blinking pattern**
 
 we can record the pattern in a .txt file on PC and replay that pattern anytime.
