@@ -110,10 +110,17 @@ int main() {
 
 Then we try to use Python Serial to interact with C. **The .c and .py files are in the attachment.**
 
-The user can choose the modes:
+The basic logic is:
+- ```qtpy = serial.Serial('COM5', 9600)``` to access PY2040 port
+- ```qtpy.write(b'...')``` to choose record or replay mode: b'r' for record and b'p' for replay 
+
+So we can choose the modes:
 **R: record a blinking pattern**
 
 we can record the pattern in a .txt file on PC and replay that pattern anytime.
+
+- ```qtpy.readline()``` to access the print out value from 2040 port then write them in .txt file
+
 
 **P: replay a recorded sequence on your NeoPixel**
 
@@ -122,6 +129,11 @@ In the replay mode, we can:
 2) if choosing speedup or speed down, we can select a range of output rates
 3) choose the number of time we want to loop the pattern
 4) we can access .txt file and modify the pattern via keyboard
+
+- ```file_to_list(path,data_out)``` to convert the .txt file to the list
+- choose the speed mode and rate
+- choose the time for loop
+- ```qtpy.write(b'1')``` or ```qtpy.write(b'0')``` as input to C
 
 ### Result
 
