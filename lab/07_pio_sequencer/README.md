@@ -2,6 +2,10 @@
 
 - modify your sequencer to use the PIO as its primary I/O engine, including the ability to R/W any register 
 
+### Intro
+
+In part 3/4, PIO is only as output for blinking the light and we use GPIO to detect BOOT button pressing. In this part, we modified analyzer example to use PIO as both input to detect BOOT button pressing and output to blink the light.
+
 ### Code:
 ```
 #include <stdio.h>
