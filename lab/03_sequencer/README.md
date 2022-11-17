@@ -58,52 +58,49 @@ int main() {
     int array[MAX]={0};
     int i;
 
-    while (1) {
-        printf("Start the recording after red light:\n");
-        set_neopixel_color(0X00FF0000);
-        sleep_ms(1000);
-        for (i = 0; i < 100; i++){
-            if(!gpio_get(BOOT_PIN)) {
-                array[i]=1;
-                set_neopixel_color(0X0000FF00);
-            } 
-            else {
-                array[i]=0;
-                set_neopixel_color(0x00000000);
-            }
-            sleep_ms(100);
+    // sleep_ms(10000);
+    while(stdio_usb_connected()!=true);
+    printf("Start the recording after red light:\n");
+    set_neopixel_color(0X00FF0000);
+    sleep_ms(1000);
+    for (i = 0; i < 100; i++){
+        if(!gpio_get(BOOT_PIN)) {
+            array[i]=1;
+            set_neopixel_color(0X0000FF00);
+        } 
+        else {
+            array[i]=0;
+            set_neopixel_color(0x00000000);
         }
-        
-                
-        printf("Finish the recording.\n");
-        set_neopixel_color(0X00000000);
         sleep_ms(100);
-        printf("Now play the recording:\n");
-
-        for (i = 0; i < 100; i++)
-            printf("%d ", array[i]);
-        printf("\n");
+    }
         
-        while(true){
-            // float speed = 1;
-            // printf("Enter the speed you want to speed up: \n");
-            // scanf("%f", &speed);
-            // printf("The speed now is x%f\n", speed);
+    printf("Finish the recording.\n");
+    set_neopixel_color(0X00000000);
+    sleep_ms(100);
+    printf("Now play the recording:\n");
 
+    for (i = 0; i < 100; i++)
+        printf("%d ", array[i]);
+    printf("\n");
+    
+    while(true){
+        float speed = 1;
+        printf("Enter the speed you want to speed up: \n");
+        scanf("%f", &speed);
+        printf("The speed now is x%f\n", speed);
         
-            for (i = 0; i < 100; i++){
-                if(array[i] == 1) {
-                    set_neopixel_color(0X000000FF);
-                    sleep_ms(100);
-                } else {
-                    set_neopixel_color(0x00000000);
-                    sleep_ms(100);
-                }
+        for (i = 0; i < 100; i++){
+            if(array[i] == 1) {
+                set_neopixel_color(0X000000FF);
+                sleep_ms(100/speed);
+            } else {
+                set_neopixel_color(0x00000000);
+                sleep_ms(100/speed);
             }
-            
-        sleep_ms(1000);
         }
-   
+    sleep_ms(1000);
+    set_neopixel_color(0x00000000);
     }
 }
 ```
