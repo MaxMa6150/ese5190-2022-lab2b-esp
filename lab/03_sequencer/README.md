@@ -125,7 +125,7 @@ In the replay mode, we can:
 
 ### Result
 
-The demo is shown in the youtube video.
+The demo is shown in the [youtube video](https://youtu.be/-8h8KXTmqto).
 
 The .txt file with recorded pattern is shown in the attachment.
 
