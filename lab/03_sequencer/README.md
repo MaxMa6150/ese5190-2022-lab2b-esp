@@ -14,7 +14,7 @@ Create a 'sequencer' that allows you to record BOOT button presses and play them
     
 ### Code:
 
-Before working on Python Serial, we firstly try to save the recording pattern as an array in C
+Before working on Python Serial, we firstly try to save the recording pattern as an array in C. After the program starts, it will ask user to press the button in 10s, the program will save and replay the pattern.
 
 ```
 #include <stdio.h>
@@ -109,6 +109,8 @@ int main() {
 ```
 
 Then we try to use Python Serial to interact with C. **The .c and .py files are in the attachment.**
+
+Once the C code is run on RP2040 and Python is run on PC, on the console it will ask the user to either start recording the BOOT button pressing for 5 seconds, or replay the sequence in the speed chosen by the user. Python is in charge of literal input.
 
 The basic logic is:
 - ```qtpy = serial.Serial('COM5', 9600)``` to access PY2040 port
