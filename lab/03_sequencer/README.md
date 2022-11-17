@@ -14,6 +14,8 @@ Create a 'sequencer' that allows you to record BOOT button presses and play them
     
 ### Code:
 
+Before working on Python Serial, we firstly try to save the recording pattern as an array in C
+
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -105,5 +107,13 @@ int main() {
     }
 }
 ```
+
+Then we try to use Python Serial to interact with C. The .c and .py file are in the attachment.
+
+### Result
+
+The demo is shown in the youtube video.
+
+The .txt file with recorded pattern is shown in the attachment.
 
 
