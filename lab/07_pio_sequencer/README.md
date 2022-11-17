@@ -4,7 +4,9 @@
 
 ### Result:
 
-After changing the code to read BOOT button via PIO, the sequencer still works.
+After access BOOT button via PIO instead of GPIO, the sequencer still works.
+
+The result is shown in [youtube video](https://youtu.be/yodozQOWnN8).
 
 The screenshot below is the new .txt file with recorded pattern.
 
