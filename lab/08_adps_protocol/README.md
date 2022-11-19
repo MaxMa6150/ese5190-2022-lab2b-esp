@@ -32,6 +32,8 @@ mov isr, null              ; Reset the input bit counter
 ```
 After adding this line, we can correctly get proximity readout.
 
+The address of each used register are read from [APDS-9960 datasheet](https://cdn.sparkfun.com/assets/learn_tutorials/3/2/1/Avago-APDS-9960-datasheet.pdf)
+
 ### Result
 
 The console can print out the proximity and color change.
