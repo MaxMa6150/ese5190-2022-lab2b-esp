@@ -31,3 +31,9 @@ Also, in i2c.pio, we need to add one line in line 62:
 mov isr, null              ; Reset the input bit counter
 ```
 After adding this line, we can correctly get proximity readout.
+
+### Result
+
+The console can print out the proximity and color change.
+
+The result is shown in [youtube video].
