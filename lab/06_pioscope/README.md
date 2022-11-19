@@ -130,27 +130,6 @@ int main() {
     printf("Press BOOT button to start measure.");
     logic_analyser_init(pio, sm, CAPTURE_PIN_BASE, CAPTURE_PIN_COUNT, 256.f);
 
-    // printf("Arming trigger\n");
-    // printf("Starting PWM example\n");
-    // // PWM example: -----------------------------------------------------------
-    // gpio_set_function(CAPTURE_PIN_BASE, GPIO_FUNC_PWM);
-    // gpio_set_function(CAPTURE_PIN_BASE + 1, GPIO_FUNC_PWM);
-    // // Topmost value of 3: count from 0 to 3 and then wrap, so period is 4 cycles
-    // pwm_hw->slice[0].top = 3;
-    // // Divide frequency by two to slow things down a little
-    // pwm_hw->slice[0].div = 4 << PWM_CH0_DIV_INT_LSB;
-    // // Set channel A to be high for 1 cycle each period (duty cycle 1/4) and
-    // // channel B for 3 cycles (duty cycle 3/4)
-    // pwm_hw->slice[0].cc =
-    //         (1 << PWM_CH0_CC_A_LSB) |
-    //         (3 << PWM_CH0_CC_B_LSB);
-    // // Enable this PWM slice
-    // pwm_hw->slice[0].csr = PWM_CH0_CSR_EN_BITS;
-    // // ------------------------------------------------------------------------
-
-    // // The logic analyser should have started capturing as soon as it saw the
-    // // first transition. Wait until the last sample comes in from the DMA.
-    // dma_channel_wait_for_finish_blocking(dma_chan);
     while(1){
         if(!gpio_get(BOOT_PIN)){
             logic_analyser_arm(pio, sm, dma_chan, capture_buf, buf_size_words, CAPTURE_PIN_BASE, false);
