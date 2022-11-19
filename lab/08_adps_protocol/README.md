@@ -38,4 +38,5 @@ The address of each used register are read from [APDS-9960 datasheet](https://cd
 
 The console can print out the proximity and color change.
 
-The result is shown in [youtube video].
+The result is shown in below.
+https://github.com/MaxMa6150/ese5190-2022-lab2b-esp/blob/main/lab/08_adps_protocol/part_8.gif
